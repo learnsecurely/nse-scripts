@@ -23,7 +23,7 @@ author = "Jeremy Pruitt"
 license = "Same as Nmap--See https://nmap.org/book/man-legal.html"
 categories = {"version"}
 
-portrule = shortport.version_port_or_service({8443}, {"kubernetes"}, "tcp")
+portrule = shortport.version_port_or_service({6443,8443}, {"kubernetes"}, "tcp")
 
 action = function(host, port)
 
